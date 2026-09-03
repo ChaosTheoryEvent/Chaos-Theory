@@ -73,8 +73,8 @@ PotatoPatchUtils.Developer{
 			trigger = "before",
 			delay = 0.75,
 			func = function()
-                G.GAME.slib_banished_keys[context.consumeable] = true
-                G.GAME.banned_keys["c_chat_catalyst"] = true
+                G.GAME.slib_banished_keys[context.consumeable.config.center.key] = true
+--                G.GAME.banned_keys["c_chat_catalyst"] = true
 				return true
 			end,
 		}))
